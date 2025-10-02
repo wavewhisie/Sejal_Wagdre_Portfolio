@@ -5,6 +5,11 @@ import nodejsIcon from '@/assets/tech/nodejs.png';
 import mongodbIcon from '@/assets/tech/mongodb.png';
 import ethereumIcon from '@/assets/tech/ethereum.png';
 import sqlIcon from '@/assets/tech/sql.png';
+import htmlIcon from '@/assets/tech/html.png';
+import cssIcon from '@/assets/tech/css.png';
+import postgresqlIcon from '@/assets/tech/postgresql.png';
+import mysqlIcon from '@/assets/tech/mysql.png';
+import vscodeIcon from '@/assets/tech/vscode.png';
 
 const Skills = () => {
   const skillCategories = [
@@ -13,22 +18,22 @@ const Skills = () => {
       skills: [
         { name: 'Python', icon: pythonIcon },
         { name: 'SQL', icon: sqlIcon },
-        { name: 'HTML', icon: null },
-        { name: 'CSS', icon: null },
+        { name: 'HTML', icon: htmlIcon },
+        { name: 'CSS', icon: cssIcon },
       ],
     },
     {
       title: 'Cloud & Databases',
       skills: [
         { name: 'MongoDB', icon: mongodbIcon },
-        { name: 'MySQL', icon: null },
-        { name: 'PostgreSQL', icon: null },
+        { name: 'MySQL', icon: mysqlIcon },
+        { name: 'PostgreSQL', icon: postgresqlIcon },
       ],
     },
     {
       title: 'Tools & Frameworks',
       skills: [
-        { name: 'VS Code', icon: null },
+        { name: 'VS Code', icon: vscodeIcon },
         { name: 'ReactJS', icon: reactIcon },
         { name: 'Node.js', icon: nodejsIcon },
         { name: 'Ethereum', icon: ethereumIcon },
