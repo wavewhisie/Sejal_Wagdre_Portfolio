@@ -25,7 +25,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Amravati, India',
+      value: 'Nagpur, India',
       href: null,
     },
   ];

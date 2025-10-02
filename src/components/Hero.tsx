@@ -13,11 +13,11 @@ const Hero = () => {
     <section id="hero" className="min-h-screen flex items-center justify-center pt-20 px-4">
       <div className="container mx-auto text-center max-w-4xl">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent gradient-primary">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
             Sejal Wagdre
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-medium">
-            Aspiring Corporate Professional | Computer Science Undergraduate
+            Computer Science Undergraduate
           </p>
           <p className="text-lg text-foreground/80 mb-12 max-w-2xl mx-auto leading-relaxed">
             Passionate about technology and real-world applications. Strong communicator, natural leader, 
