@@ -38,7 +38,7 @@ const Contact = () => {
         </h2>
         <div className="w-20 h-1 bg-accent mx-auto mb-6 rounded-full"></div>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          I'm currently seeking internships or entry-level roles in software development or IT. 
+          I'm currently seeking internships or entry-level roles in software development or IT.
           Feel free to reach out for opportunities or collaborations.
         </p>
 
@@ -74,9 +74,25 @@ const Contact = () => {
           ))}
         </div>
 
-        <div className="text-center">
+        {/* <div className="text-center">
           <a
             href="mailto:sejalwagdre355@gmail.com"
+            className="inline-block"
+          >
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow transition-smooth"
+            >
+              <Mail className="mr-2 h-5 w-5" />
+              Send me an email
+            </Button>
+          </a>
+        </div> */}
+        <div className="text-center">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=sejalwagdre355@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block"
           >
             <Button

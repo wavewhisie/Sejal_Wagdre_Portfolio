@@ -3,13 +3,15 @@ import pythonIcon from '@/assets/tech/python.png';
 import reactIcon from '@/assets/tech/react.png';
 import nodejsIcon from '@/assets/tech/nodejs.png';
 import mongodbIcon from '@/assets/tech/mongodb.png';
-import ethereumIcon from '@/assets/tech/ethereum.png';
+// import ethereumIcon from '@/assets/tech/ethereum.png';
 import sqlIcon from '@/assets/tech/sql.png';
 import htmlIcon from '@/assets/tech/html.png';
 import cssIcon from '@/assets/tech/css.png';
 import postgresqlIcon from '@/assets/tech/postgresql.png';
 import mysqlIcon from '@/assets/tech/mysql.png';
 import vscodeIcon from '@/assets/tech/vscode.png';
+import javascriptIcon from '@/assets/tech/javascript.png'
+
 
 const Skills = () => {
   const skillCategories = [
@@ -20,6 +22,7 @@ const Skills = () => {
         { name: 'SQL', icon: sqlIcon },
         { name: 'HTML', icon: htmlIcon },
         { name: 'CSS', icon: cssIcon },
+        { name: 'JavaScript', icon: javascriptIcon },
       ],
     },
     {
@@ -28,6 +31,7 @@ const Skills = () => {
         { name: 'MongoDB', icon: mongodbIcon },
         { name: 'MySQL', icon: mysqlIcon },
         { name: 'PostgreSQL', icon: postgresqlIcon },
+        
       ],
     },
     {
@@ -36,7 +40,7 @@ const Skills = () => {
         { name: 'VS Code', icon: vscodeIcon },
         { name: 'ReactJS', icon: reactIcon },
         { name: 'Node.js', icon: nodejsIcon },
-        { name: 'Ethereum', icon: ethereumIcon },
+        
       ],
     },
   ];
