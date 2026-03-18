@@ -1,5 +1,6 @@
 import { Mail, Linkedin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import resume from '@/assets/resume/Sejal Wagdre Resume.pdf';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -50,7 +51,7 @@ const Hero = () => {
                 LinkedIn
               </Button>
             </a>
-            <a href="/resume.pdf" target="_blank">
+            <a href={resume} target="_blank" rel="noopener noreferrer">
               <Button variant="secondary" size="lg">
                 View Resume
               </Button>
