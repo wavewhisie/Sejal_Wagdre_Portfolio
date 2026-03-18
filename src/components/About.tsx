@@ -5,40 +5,47 @@ const About = () => {
   const highlights = [
     {
       icon: Code2,
-      title: 'Technical Excellence',
-      description: 'Passionate about technology and real-world applications',
-    },
-    {
-      icon: MessageSquare,
-      title: 'Strong Communicator',
-      description: 'Effective at conveying ideas and collaborating with teams',
-    },
-    {
-      icon: Users,
-      title: 'Natural Leader',
-      description: 'Adaptable and outgoing with proven leadership experience',
+      title: 'Backend Development',
+      description: 'Built 10+ REST APIs using Node.js, Express.js, and MongoDB',
     },
     {
       icon: TrendingUp,
-      title: 'Continuous Learner',
-      description: 'Dedicated to growth and staying current with technology',
+      title: 'System Design',
+      description: 'Designed scalable backend architectures with authentication and RBAC',
+    },
+    {
+      icon: Users,
+      title: 'Blockchain Project',
+      description: 'Developed decentralized license system using Ethereum & IPFS',
+    },
+    {
+      icon: MessageSquare,
+      title: 'Research Publication',
+      description: 'Published paper in IJRASET (2025) on blockchain-based system',
     },
   ];
 
   return (
-    <section id="about" className="py-20 px-4">
+    <section id="about" className="py-16 md:py-20">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
           About Me
         </h2>
+        <p className="text-center text-muted-foreground mb-8">
+          Backend Developer | API Developer | Blockchain Enthusiast
+        </p>
         <div className="w-20 h-1 bg-accent mx-auto mb-12 rounded-full"></div>
 
         <div className="max-w-3xl mx-auto mb-16">
-          <p className="text-lg text-foreground/90 leading-relaxed text-center">
-            I'm an enthusiastic Computer Science undergraduate with a passion for technology 
-            and its real-world applications. Currently seeking internships or entry-level roles 
-            in software development or IT, I bring strong communication skills, natural leadership, 
-            and an unwavering dedication to continuous learning and growth.
+          {/* <p className="text-lg text-foreground/90 leading-relaxed text-center text-base md:text-lg"> */}
+          <p className="text-base md:text-lg text-foreground/90 leading-relaxed text-center max-w-2xl mx-auto">
+            Backend-focused Computer Science Engineering student (CGPA: 9.14) with hands-on experience
+            in building scalable REST APIs using <span className="text-primary font-semibold tracking-wide">Node.js, Express.js, and MongoDB.</span> Developed 10+ APIs
+            during internship and built a blockchain-based government license system with secure document
+            handling using IPFS and encryption. Published research in IJRASET (2025).
+            <br /><br />
+            I am passionate about backend development, system design, and building real-world applications
+            that solve meaningful problems.
           </p>
         </div>
 
@@ -46,10 +53,11 @@ const About = () => {
           {highlights.map((item, index) => (
             <Card
               key={index}
-              className="bg-card border-border hover:border-accent transition-smooth hover:shadow-glow"
+              // className="bg-card border-border hover:border-accent transition-smooth hover:shadow-glow"
+              className="bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)]"
             >
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mx-auto mb-4">
                   <item.icon className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>

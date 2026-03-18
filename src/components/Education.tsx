@@ -7,7 +7,7 @@ const Education = () => {
       degree: 'Bachelor of Technology in Computer Science',
       institution: 'G.H. Raisoni University, Nagpur',
       period: '2022 - 2026',
-      status: 'In Progress',
+      status: 'Pursuing (CGPA: 9.14)',
     },
     {
       degree: 'Higher Secondary Certification (Class XII)',
@@ -29,20 +29,23 @@ const Education = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
           Education
         </h2>
+        <p className="text-center text-muted-foreground mb-8">
+          My academic journey and performance
+        </p>
         <div className="w-20 h-1 bg-accent mx-auto mb-12 rounded-full"></div>
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border hidden md:block"></div>
-
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/30 via-border to-primary/30 hidden md:block"></div>
+<div className="space-y-8 md:pl-6"></div>
           <div className="space-y-8">
             {education.map((item, index) => (
               <Card
                 key={index}
-                className="relative md:ml-20 bg-card border-border hover:border-accent transition-smooth hover:shadow-elegant"
+                className="bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.25)] hover:-translate-y-2 md:ml-20"
               >
                 {/* Timeline dot */}
-                <div className="absolute -left-[4.5rem] top-8 w-8 h-8 rounded-full bg-primary border-4 border-background hidden md:flex items-center justify-center">
+                <div className="absolute -left-[4.5rem] top-8 w-8 h-8 rounded-full bg-primary shadow-[0_0_10px_rgba(59,130,246,0.5)] border-4 border-background hidden md:flex items-center justify-center">
                   <GraduationCap className="h-4 w-4 text-primary-foreground" />
                 </div>
 

@@ -73,21 +73,6 @@ const Contact = () => {
             </Card>
           ))}
         </div>
-
-        {/* <div className="text-center">
-          <a
-            href="mailto:sejalwagdre355@gmail.com"
-            className="inline-block"
-          >
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow transition-smooth"
-            >
-              <Mail className="mr-2 h-5 w-5" />
-              Send me an email
-            </Button>
-          </a>
-        </div> */}
         <div className="text-center">
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=sejalwagdre355@gmail.com"

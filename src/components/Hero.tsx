@@ -17,18 +17,22 @@ const Hero = () => {
             Sejal Wagdre
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-medium">
-            Computer Science Undergraduate
+            Backend Developer | Node.js | MongoDB | REST APIs
           </p>
           <p className="text-lg text-foreground/80 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Passionate about technology and real-world applications. Strong communicator, natural leader, 
+            Passionate about technology and real-world applications. Strong communicator, natural leader,
             and dedicated to continuous learning and growth.
+          </p>
+          <p className="text-primary font-medium mb-8">
+            Actively seeking backend developer opportunities
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow transition-smooth"
+              // className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow transition-smooth"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:shadow-[0_0_25px_rgba(59,130,246,0.4)] hover:-translate-y-1"
             >
               Get in Touch
             </Button>
@@ -46,6 +50,11 @@ const Hero = () => {
                 LinkedIn
               </Button>
             </a>
+            <a href="/resume.pdf" target="_blank">
+              <Button variant="secondary" size="lg">
+                View Resume
+              </Button>
+            </a>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-muted-foreground">
@@ -54,7 +63,7 @@ const Hero = () => {
               className="flex items-center gap-2 hover:text-accent transition-smooth"
             >
               <Mail className="h-5 w-5" />
-              <span>sejalwagdre355@gmail.com</span>
+              <span className="hidden sm:inline">sejalwagdre355@gmail.com</span>
             </a>
             <a
               href="tel:+918767903013"

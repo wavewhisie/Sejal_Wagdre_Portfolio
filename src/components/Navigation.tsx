@@ -17,6 +17,7 @@ const Navigation = () => {
     { label: 'About', href: '#about' },
     { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#projects' },
+    { label: 'Experience', href: '#experience' },
     { label: 'Education', href: '#education' },
     { label: 'Achievements', href: '#achievements' },
     { label: 'Contact', href: '#contact' },
@@ -32,9 +33,10 @@ const Navigation = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
-        isScrolled ? 'bg-card/95 backdrop-blur-md shadow-elegant' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${isScrolled
+          ? 'bg-background/80 backdrop-blur-lg border-b border-border shadow-sm'
+          : 'bg-transparent'
+        }`}
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
@@ -44,7 +46,7 @@ const Navigation = () => {
               e.preventDefault();
               scrollToSection('#hero');
             }}
-            className="text-2xl font-bold text-primary transition-smooth hover:text-accent"
+            className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:opacity-80 transition-all"
           >
             SW
           </a>
@@ -59,9 +61,12 @@ const Navigation = () => {
                     e.preventDefault();
                     scrollToSection(item.href);
                   }}
-                  className="text-foreground/80 hover:text-accent transition-smooth font-medium"
+                  // className="text-foreground/80 hover:text-accent transition-smooth font-medium"
+                  className="text-foreground/80 hover:text-primary transition-all duration-300 relative group"
+
                 >
                   {item.label}
+                  <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
             ))}
@@ -79,7 +84,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <ul className="md:hidden mt-4 space-y-3 pb-4">
+          <ul className="md:hidden mt-4 space-y-3 pb-4 bg-card rounded-lg p-4 shadow-lg">
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
